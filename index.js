@@ -3,26 +3,17 @@ const thmasInputText = document.querySelector('#thmas-input-text');
 
 thmasButton.addEventListener('click', clickButton);
 
-function showAlert(message) {
-    document.getElementById('alertMessage').textContent = message;
-    document.getElementById('customAlert').style.display = 'flex';
-}
-
-function closeAlert() {
-    document.getElementById('customAlert').style.display = 'none';
-}
 
 
 function clickButton() {
     var URL = "https://ameur-bellil.github.io/puzzle2/" ;
-    var correctinput = parseInt(thmasInputText.value, 10);
+    var correctinput = parseInt(thmasInputText.value);
 
     if (correctinput === 231) {
         var win = window.open(URL, "_blank");
     }else{
-        showAlert("Try again");
+        window.alert("Try again")
     }
-    console.log(correctinput);
 }
 
 /*=============== SHOW MENU ===============*/
