@@ -8,7 +8,7 @@ function clickButton() {
     var correctinput = parseInt(thmasInputText.value);
 
     if (correctinput === 231) {
-        window.location.href = URL;
+        var win = window.open(URL, "_blank");
     }else{
         window.alert("Try again")
     }
