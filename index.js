@@ -12,8 +12,7 @@ function clickButton() {
     }else{
         window.alert("Try again")
     }
-
-
+    console.log(correctinput);
 }
 
 /*=============== SHOW MENU ===============*/
